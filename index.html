@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dois Pontos — Kah, Belly & Smeeg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Background blobs -->
+<div class="bg-blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+
+<!-- Floating deco elements -->
+<div class="deco" style="top:8%;  left:4%;  animation-duration:4s;  animation-delay:0s;">  <i class="fa-solid fa-heart"></i></div>
+<div class="deco" style="top:22%; right:5%; animation-duration:5s;  animation-delay:1s;">  <i class="fa-solid fa-star"></i></div>
+<div class="deco" style="top:52%; left:2%; animation-duration:6s;  animation-delay:2s;">  <i class="fa-solid fa-candy-cane"></i></div>
+<div class="deco" style="top:68%; right:4%;animation-duration:4.5s;animation-delay:0.5s;"><i class="fa-solid fa-clover"></i></div>
+<div class="deco" style="top:83%; left:7%; animation-duration:5.5s;animation-delay:1.5s;"><i class="fa-solid fa-sparkles"></i></div>
+<div class="deco" style="top:38%; right:3%;animation-duration:4s;  animation-delay:3s;">  <i class="fa-solid fa-ribbon"></i></div>
+<div class="deco" style="top:15%; left:50%;animation-duration:7s;  animation-delay:2.5s;"><i class="fa-solid fa-moon"></i></div>
+
+<!-- Header -->
+<header>
+  <div class="badge"><i class="fa-solid fa-users"></i> conheça a gente</div>
+  <h1>Kah, Belly<br>&amp; Smeeg <span class="heart"><i class="fa-solid fa-heart"></i></span></h1>
+  <p class="subtitle">Inseparáveis!</p>
+  <div class="stars">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+  </div>
+</header>
+
+<!-- Cards -->
+<section class="cards-section">
+  <div class="cards-grid">
+
+    <!-- KAH -->
+    <div class="card card-kah">
+      <div class="card-header">
+        <div class="card-avatar-wrap">
+          <div class="avatar kah-av"><i class="fa-solid fa-face-smile-beam"></i></div>
+        </div>
+        <div class="card-name">Kah</div>
+        <div class="card-role"><i class="fa-solid fa-wand-magic-sparkles"></i> Essa é a Kah, se quiser conhecer <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <div class="tags">
+          <span class="tag"><i class="fa-solid fa-heart-pulse"></i> Carinhosa (com quem é próximo)</span>
+          <span class="tag"><i class="fa-solid fa-ghost"></i> Pai do Smeeg</span>
+          <span class="tag"><i class="fa-solid fa-venus-mars"></i> Homem da Belly</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Aquela que ilumina o ambiente só de chegar. Tem um sorriso que contagia todo mundo e uma energia que só ela tem! <i class="fa-solid fa-sparkles"></i>
+        </p>
+        <hr class="divider" />
+        <ul class="info-list">
+          <li><span class="icon"><i class="fa-solid fa-music"></i></span> Ama música</li>
+          <li><span class="icon"><i class="fa-solid fa-rainbow"></i></span> Otimista por natureza</li>
+          <li><span class="icon"><i class="fa-solid fa-hand-holding-heart"></i></span> Mestra da gentileza</li>
+          <li><span class="icon"><i class="fa-solid fa-hands-holding"></i></span> Abraço de mãe garantido</li>
+        </ul>
+      </div>
+      <button class="btn" onclick="openModal('kah')">
+        <i class="fa-solid fa-magnifying-glass"></i> Conhecer a Kah
+      </button>
+    </div>
+
+    <!-- BELLY -->
+    <div class="card card-belly">
+      <div class="card-header">
+        <div class="card-avatar-wrap">
+          <div class="avatar belly-av"><i class="fa-solid fa-face-kiss-wink-heart"></i></div>
+        </div>
+        <div class="card-name">Belly</div>
+        <div class="card-role"><i class="fa-solid fa-leaf"></i> Fofa quando deseja <i class="fa-solid fa-leaf"></i></div>
+        <div class="tags">
+          <span class="tag"><i class="fa-solid fa-seedling"></i> Gentil</span>
+          <span class="tag"><i class="fa-solid fa-book-open"></i> Curiosa</span>
+          <span class="tag"><i class="fa-solid fa-hand-holding-hand"></i> Acolhedora</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Derrete corações. <i class="fa-solid fa-heart-crack"></i>
+        </p>
+        <hr class="divider" />
+        <ul class="info-list">
+          <li><span class="icon"><i class="fa-solid fa-crosshairs"></i></span> Rainha do tiro no peito</li>
+          <li><span class="icon"><i class="fa-solid fa-vest"></i></span> Não erra um colete</li>
+          <li><span class="icon"><i class="fa-solid fa-heart"></i></span> Mulher da Kah</li>
+          <li><span class="icon"><i class="fa-solid fa-person-running"></i></span> Ela sempre rusha (morre atirando)</li>
+        </ul>
+      </div>
+      <button class="btn" onclick="openModal('belly')">
+        <i class="fa-solid fa-magnifying-glass"></i> Conhecer a Belly
+      </button>
+    </div>
+
+    <!-- SMEEG -->
+    <div class="card card-smeeg">
+      <div class="card-header">
+        <div class="card-avatar-wrap">
+          <div class="avatar smeeg-av"><i class="fa-solid fa-skull"></i></div>
+        </div>
+        <div class="card-name">Smeeg</div>
+        <div class="card-role"><i class="fa-solid fa-moon"></i> Ser das trevas e gostoso <i class="fa-solid fa-moon"></i></div>
+        <div class="tags">
+          <span class="tag"><i class="fa-solid fa-yin-yang"></i> Benevolente (quando quer)</span>
+          <span class="tag"><i class="fa-solid fa-lungs"></i> Famoso estoura pulmão</span>
+          <span class="tag"><i class="fa-solid fa-utensils"></i> Gosto de comer</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">
+          Um ser completamente único! Tem um jeito especial de ver o mundo que faz todo mundo querer ser amigo. <i class="fa-solid fa-crystal-ball" style="font-style:normal;">🔮</i>
+        </p>
+        <hr class="divider" />
+        <ul class="info-list">
+          <li><span class="icon"><i class="fa-solid fa-bolt"></i></span> Negatividade</li>
+          <li><span class="icon"><i class="fa-solid fa-masks-theater"></i></span> Egocêntrico</li>
+          <li><span class="icon"><i class="fa-solid fa-cloud-sun"></i></span> Idealista</li>
+          <li><span class="icon"><i class="fa-solid fa-shield-heart"></i></span> Leal como ninguém</li>
+        </ul>
+      </div>
+      <button class="btn" onclick="openModal('smeeg')">
+        <i class="fa-solid fa-magnifying-glass"></i> Conhecer o Smeeg
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Together strip -->
+<section class="together">
+  <div class="together-card">
+    <h2><i class="fa-solid fa-fire"></i> Juntos somos</h2>
+    <p>Uma família inseparável</p>
+    <div class="emoji-row">
+      <i class="fa-solid fa-face-smile-beam" style="color:#ff85a1;"></i>
+      <i class="fa-solid fa-face-kiss-wink-heart" style="color:#52d9b4;"></i>
+      <i class="fa-solid fa-skull" style="color:#9b5de5;"></i>
+    </div>
+  </div>
+</section>
+
+<!-- Timer Section -->
+<section class="timer-section">
+  <div class="timer-wrap">
+    <div class="timer-badge"><i class="fa-solid fa-clock"></i> tempo juntos</div>
+    <div class="timer-title">Desde que a gente se encontrou <i class="fa-solid fa-star" style="color:#ffe066;"></i></div>
+    <div class="timer-grid">
+      <div class="timer-block">
+        <span class="timer-num" id="t-days">0</span>
+        <span class="timer-label"><i class="fa-solid fa-calendar-days"></i> dias</span>
+      </div>
+      <div class="timer-block">
+        <span class="timer-num" id="t-hours">0</span>
+        <span class="timer-label"><i class="fa-solid fa-hourglass-half"></i> horas</span>
+      </div>
+      <div class="timer-block">
+        <span class="timer-num" id="t-mins">0</span>
+        <span class="timer-label"><i class="fa-solid fa-stopwatch"></i> minutos</span>
+      </div>
+      <div class="timer-block">
+        <span class="timer-num" id="t-secs">0</span>
+        <span class="timer-label"><i class="fa-solid fa-bolt"></i> segundos</span>
+      </div>
+    </div>
+    <p class="since-date">juntos desde <span><i class="fa-solid fa-calendar-heart"></i> 21 de fevereiro de 2026</span></p>
+    <div class="heart-beat"><i class="fa-solid fa-heart"></i></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <i class="fa-solid fa-copyright"></i> Todos os direitos reservados — Dois Pontos
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal-box">
+    <div class="avatar" id="modal-avatar" style="margin:0 auto 16px; font-size:3rem;"></div>
+    <h3 id="modal-name"></h3>
+    <p id="modal-text"></p>
+    <button class="close-btn" onclick="closeModal()">
+      <i class="fa-solid fa-xmark"></i> Fechar
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
